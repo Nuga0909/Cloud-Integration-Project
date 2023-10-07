@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import LocationPin from "./LocationPin";
-import "./map.css";
+import "../styles/map.css";
 
 const Map = ({ location, zoomLevel }) => (
   <div className="map">
@@ -9,7 +9,7 @@ const Map = ({ location, zoomLevel }) => (
 
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: '' }}
+        bootstrapURLKeys={{ key: "" }}
         defaultCenter={location}
         defaultZoom={zoomLevel}
       >
@@ -21,6 +21,6 @@ const Map = ({ location, zoomLevel }) => (
       </GoogleMapReact>
     </div>
   </div>
-)
+);
 
 export default Map;
